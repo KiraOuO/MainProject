@@ -46,26 +46,30 @@ button {
 }
 
 .container {
-width: 1187px;
-height: 853px;
-padding-left: 134px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 134px;
+  margin-top: 100px;
 }
 
-.left-side {
-margin-top: 124px;
-width: 413px;
-height: 96px;
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container {
+  margin-bottom: 20px; /* Произвольное значение для отступа между текстом и картинками */
 }
 
 .title {
   font-size: 40px;
   line-height: 48px;
   color: #000;
-font-size: 40px;
-font-family: Syne;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-size: 40px;
+  font-family: Syne;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .first {
@@ -82,7 +86,7 @@ line-height: normal;
 
 .text {
   margin-top: 33px;
-  width: 370px;
+  width: calc((1vw + 1vh) * 20);
   height: 88px;
   color: #333;
   font-size: 16px;
@@ -93,6 +97,7 @@ line-height: normal;
 }
 
 button {
+  padding-top: 15px;
   margin-top: 41px;
   width: 195px;
   height: 50px;
@@ -120,26 +125,18 @@ button {
   line-height: 140%;
 }
 
-.middle {
-  margin-top: -100px;
-  padding-left: 433px;
-}
-
-.line {
-  padding: 0;
-  margin: 0;
-  width: 1px;
-  height: 772px;
-  background-color: #000;
+.image-container {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #000;
+  padding-left: 20px; /* Adjust the padding as needed */
 }
 
 .first-frame {
   width: 670px;
   height: 389px;
   flex-shrink: 0;
-  margin-left: 498px;
   margin-right: 135px;
-  margin-top: -360px;
   background: url(./../img/orginize\ 1.png), #FDFBF5 50% / cover no-repeat;
 }
 
@@ -147,14 +144,11 @@ button {
   width: 670px;
   height: 386px;
   flex-shrink: 0;
-  margin-left: 498px;
   margin-right: 135px;
   background: url(./../img/focus\ \(1\)\ 1.png), #FDFBF5 50% / cover no-repeat;
 }
 
 .third-frame {
-  width: 87.549px;
-height: 62.5px;
-flex-shrink: 0;
-margin-top: -150px;
+  margin-top: calc((1vw + 1vh) * 15);
+  margin-left: calc((1vw + 1vh) * 2);
 }
